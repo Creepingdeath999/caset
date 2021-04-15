@@ -41,15 +41,7 @@ let title;
     document.getElementById('title').textContent=title;
      });
      });
-    // get current level of volume
-    widget.getVolume(function(volume){
-    console.log('current volume value is ' + volume);
-     });
-    // set new volume level
-    widget.setVolume(50);
-    // get the value of the current position
     });
-   
     }());
   
 
