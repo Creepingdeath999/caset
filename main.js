@@ -41,7 +41,15 @@ let title;
     document.getElementById('title').textContent=title;
      });
      });
-    });
-    }());
+     widget.getVolume(function(vol){
+      let volControl=document.getElementById("vlmRange");
+      volControl.value=vol;
+     });
+    let volControl=document.getElementById("vlmRange")
+    volControl.addEventListener('change',()=>{
+      widget.setVolume(volControl.value/2)
+    })
+  });
+}());
   
 

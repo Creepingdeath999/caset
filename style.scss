@@ -19,6 +19,40 @@ body {
   align-items: center;
   height: 100vh;
 }
+#vol{
+  position: absolute;
+  top:100px;
+  background-color: #373737;
+  width:600px;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  .slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .4s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #873b3b;
+    cursor: pointer;
+  }
+}
 #caset {
   width: 600px;
   height: 400px;

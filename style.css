@@ -29,6 +29,49 @@ body {
   height: 100vh;
 }
 
+#vol {
+  position: absolute;
+  top: 100px;
+  background-color: #373737;
+  width: 600px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#vol .slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: .4s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+#vol .slider:hover {
+  opacity: 1;
+}
+
+#vol .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #873b3b;
+  cursor: pointer;
+}
+
 #caset {
   width: 600px;
   height: 400px;
